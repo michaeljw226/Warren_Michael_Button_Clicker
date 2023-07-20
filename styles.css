@@ -1,0 +1,98 @@
+/* linking font .ttf doc to my CSS */
+@font-face {
+    font-family: "Comic-Mono";
+    src: url("./ComicMono.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Comic-Mono;
+}
+
+/* centering entire page */
+.center {
+    margin: 0 auto;
+    width: 60%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.nav {
+    justify-content: space-between;
+    background-color: rgb(204, 204, 204);
+    padding: 10px;
+}
+
+.login {
+    background-color: rgb(42, 120, 229);
+    padding: 5px 10px;
+    ;
+    color: white;
+}
+
+.definitions {
+    /* separating  */
+    gap: 20px;
+}
+
+.main-left {
+    padding: 0px 0px 10px 10px;
+
+    flex-direction: column;
+    gap: 20px;
+}
+
+.individualDefinition {
+    outline: 2px solid black;
+    align-items: center;
+    padding:50px;
+}
+
+.definitionLeft {
+    flex-direction: column;
+    outline:1px solid blue;
+}
+
+.wordDetails {
+    
+    margin: 10px;
+}
+.center2{
+    align-items: center;
+}
+
+.numberOfLikes {
+    padding: 5px 10px;
+    background-color: rgb(242, 202, 78);
+}
+
+.definitionRight {
+    margin-left: 10px;
+}
+
+.submit {
+    height: 40%;
+    width: 100%;
+    box-shadow: 3px 3px 8px 1px;
+    outline: 3px solid black;
+}
+.definedTagline{
+    text-align: center;
+}
+
+.defButton {
+    justify-content: center;
+    margin: 10px;
+}
+
+.addYourOwn {
+    padding: 5px 20px;
+    background-color: rgb(147, 196, 125);
+    box-shadow: 1px 1px 1px 2px;
+
+}

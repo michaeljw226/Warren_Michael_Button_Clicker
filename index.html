@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- centering body -->
+    <div class="center flex">
+        <!-- navbar -->
+        <div class="nav flex">
+            <h1 class="websiteTitle">Dojonary</h1>
+            <input type="text" class="navSearch" name="Search" placeholder="Search">
+            <button class="login" onclick="signedIn(this)">Login</button>
+        </div>
+        <!-- main/actual body -->
+        <div class="definitions flex">
+            <!-- left main -->
+            <div class="main-left flex">
+                <!-- definition 1 -->
+                <div class="individualDefinition flex">
+                    <div class="definitionLeft flex">
+                        <div class="wordDetails">
+                            <h1>ninja</h1>
+                            <h4>noun</h4>
+                            <h5 >Plural: ninjas</h5>
+                        </div>
+                        <button onclick="alert('Ninja was liked')" class="numberOfLikes">
+                            <span class="numb-likes">37</span> Likes
+                        </button>
+                    </div>
+                    <div class="definitionRight">
+                        <h4 class="definition">A practitioner skilled in the <a href="linkToJapanese">Japanese</a> art
+                            of <a href="linkToNinjitsu">Ninjitsu</a></h4>
+                    </div>
+                </div>
+                <!-- definition 2 -->
+                <div class="individualDefinition flex">
+                    <div class="definitionLeft flex">
+                        <div class="wordDetails">
+                            <h1>ninja</h1>
+                            <h4>noun</h4>
+                            <h5 >Plural: ninjas</h5>
+                        </div>
+                        <button onclick="alert('Ninja was liked')" class="numberOfLikes">
+                            <span class="numb-likes">37</span> Likes
+                        </button>
+                    </div>
+                    <div class="definitionRight">
+                        <h4 class="definition">A <a href="linkToProgrammer">programmer</a> who breaks down problems with
+                            <a href="linkToZen">zen</a>-like focus</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- right main -->
+            <div class="main-right">
+                <div class="submit">
+                    <h3 class="definedTagline">Dojonary is defined by YOU</h3>
+                    <div class="defButton flex">
+                        <button class="addYourOwn" onclick="clickAway(this)">Add Definition</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="scripts.js"></script>
+</body>
+
+</html>
